@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header and Sidebar</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard-view">
+        <header class="header">
+            <div class="logo-wrapper">
+                <div class="hamburger">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <div class="border-right"></div>
+            </div>
+
+            <div class="header-wrapper">
+                <div class="header-left-section">
+                    <div class="logo">
+                        <img src="/resources/logo.png" alt="Logo">
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search using website URL..... Bussiness name. Products more">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+                <div class="header-right-section">
+                    <div class="icons">
+                        <i class="fa fa-question-circle-o"></i>
+                        <i class="fa fa-bell-o"></i>
+
+                    </div>
+                    <div class="profile">
+                        <div class="profile-img">
+                            <img src="/resources/profile.jpg" alt="Profile Picture">
+                        </div>
+                        <span>Julie Micheals</span>
+                        <i class="fa fa-chevron-down"></i>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="left-sidebar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Profiles</a></li>
+                </ul>
+            </nav>
+        </section>
+        <main class="main-content">
+            <section class="filter-dashboard">
+                <div class="filter-desc">
+                    <h1>Filters to find Prospects</h1>
+                    <p>These Filters help refine your search results across various Signals and Segments.</p>
+                </div>
+                <div class="filter-wrapper">
+                    <div class="filter-category">
+                        <h2>CATEGORIES<i class="fa fa-chevron-down"></i></h2>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search Categories">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">ATV Dealer</li>
+                            <li>
+                                <input type="checkbox">ATV Repair Shop</li>
+                            <li>
+                                <input type="checkbox">Abbey</li>
+                            <li>
+                                <input type="checkbox">Abrasives Supplier</li>
+                            <li>
+                                <input type="checkbox">Abundant Life Church</li>
+                        </ul>
+                        <span>more....</span>
+                    </div>
+                    <div class="filter-category toggle-filter">
+                        <h2>WEBSITE
+                            <div class="items-wrapper">
+                                <div class="items">
+                                    <span>AND</span>
+                                    <span>OR</span>
+                                </div>
+
+                                <i class="fa fa-chevron-down"></i>
+                            </div>
+                        </h2>
+                        <ul>
+                            <li>
+                                <span>Website</span>
+                                <div class="toggle-container">
+    
+                                    <input type="radio" value="filter-theme" name="filter-theme" class="checkbox1" id="checkbox1">
+                                    <label for="checkbox1" class="checkbox1"></label>
+                                    
+                                     <input type="radio" value="filter-theme" name="filter-theme" class="checkbox2" id="checkbox2">
+                                    <label for="checkbox2" class="checkbox2"></label>
+                                    
+                                     <input type="radio" value="filter-theme" name="filter-theme" class="checkbox3" id="checkbox3">
+                                    <label for="checkbox3" class="checkbox"></label>
+                                  <div class="round"></div>
+                                  
+                                </div>
+                            </li>
+                            <li>
+                                <span>Responsive</span>
+                                <button class="toggle-button"></button>
+                            </li>
+                            <li>
+                                <span>Mobile</span>
+                                <button class="toggle-button"></button>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="filter-category">
+                        <h2>PRIMARY LANGUAGES
+                            <div class="items-wrapper">
+                                <div class="items">
+                                    <span>AND</span>
+                                    <span>OR</span>
+                                </div>
+
+                                <i class="fa fa-chevron-down"></i>
+                            </div>
+                        </h2>
+                        <div class="search-bar">
+                            <input type="text" placeholder="Search primary Languages">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <ul>
+                            <li>
+                                <input type="checkbox">Search Primary Languages</li>
+                            <li>
+                                <input type="checkbox">Catalan (Valencia)</li>
+                            <li>
+                                <input type="checkbox">Chinese</li>
+                            <li>
+                                <input type="checkbox">English</li>
+                            <li>
+                                <input type="checkbox">French</li>
+                            <li>
+                                <input type="checkbox">German</li>
+                        </ul>
+                        <span>more...</span>
+                    </div>
+                    <div class="filter-category">
+                        <h2>CONTENT<i class="fa fa-chevron-down"></i></h2>
+                    </div>
+                    <div class="filter-category">
+                        <h2>SOCIAL<i class="fa fa-chevron-down"></i></h2>
+                    </div>
+                    <div class="filter-category">
+                        <h2>SEO<i class="fa fa-chevron-down"></i></h2>
+                    </div>
+                    <div class="filter-category">
+                        <h2>SEM<i class="fa fa-chevron-down"></i></h2>
+                    </div>
+                    <div class="filter-buttons">
+                        <button class="save">CLEAR ALL</button>
+                        <button class="clear">SAVE</button>
+                        <button class="apply">APPLY</button>
+                    </div>
+                </div>
+
+            </section>
+            <div class="tab-container">
+                <input id="tab1" type="radio" name="tabs" checked>
+                <label for="tab1" class="tab-menu">My Account(78)</span>
+                </label>
+
+                <input id="tab2" type="radio" name="tabs">
+                <label for="tab2" class="tab-menu"><span>News(75)</span></label>
+
+                <input id="tab3" type="radio" name="tabs">
+                <label for="tab3" class="tab-menu"><span>Saved Searches(05)</span></label>
+
+
+                <section id="content1" class="tab-content">
+                    <div class="tab-content-main-wrapper">
+                        <div class="tab-content-left-wrapper">
+                            <i class="fa fa-filter"></i>
+                            <i class="fa fa-sort-amount-desc"></i>
+                            <div class="sort-list">sort by:
+                                <div class="sort-list-item"><span>Newly Added</span><i class="fa fa-chevron-down"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content-right-wrapper">
+                            <ul>
+                                <li>Map</li>
+                                <li>Card</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-cards-container">
+                        <div class="card">
+                            <div class="card-wrapper">
+                                <div class="card-left-wrapper">
+                                    <div class="check-box-item">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="card-details-wrapper">
+                                        <div class="details">
+                                            <h3>Nationwide Automobile</h3>
+                                            <div class="details-section">
+                                                <address>
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>26 Prince
+                                                        Street, New York, NY 10012</p>
+                                                    <p><i class="fa fa-link" aria-hidden="true"></i><a
+                                                            class="details-link"
+                                                            href="http://www.nationwide.com">www.nationwide.com</a></p>
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><a
+                                                            href="tel:+718 523-9090">(718) 523-90901</a></p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="details user-info">
+                                            <p><span>Age</span>19 Y</p>
+                                            <p><span>Employees</span>35-50</p>
+                                            <p><span>Revenue</span>$5-10M</p>
+                                            <p><span>Locations</span>03</p>
+                                            <p><span>Contacts</span>06</p>
+                                            <p><span>Avg. Spend/Mo</span>Unknown</p>
+                                        </div>
+                                        <div class="last-section">
+                                            <div class="details-category">
+                                                <p>Category(s):</p>
+                                                <ul>
+                                                    <li>Auto Auction</li>
+                                                    <li>Auto Body Parts Supplier</li>
+                                                </ul>
+                                            </div>
+                                            <div class="details-prospects">
+                                                <p>Prospects For:</p>
+                                                <ul>
+                                                    <li>Website</li>
+                                                    <li>Social</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-right-wrapper">
+                                    <button class="btn">ADD</button>
+                                    <div class="image-container">
+                                        <img src="/resources/chart-1.png" alt="chart data">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="details-footer">
+                                <div class="details-footer-info">
+                                    <p>Source: <i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                    <p>Updated On: <span>Dec 2017</span></p>
+                                </div>
+
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-wrapper">
+                                <div class="card-left-wrapper">
+                                    <div class="check-box-item">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="card-details-wrapper">
+                                        <div class="details">
+                                            <h3>Nationwide Automobile</h3>
+                                            <div class="details-section">
+                                                <address>
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>26 Prince
+                                                        Street, New York, NY 10012</p>
+                                                    <p><i class="fa fa-link" aria-hidden="true"></i><a
+                                                            class="details-link"
+                                                            href="http://www.nationwide.com">www.nationwide.com</a></p>
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><a
+                                                            href="tel:+718 523-9090">(718) 523-90901</a></p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="details user-info">
+                                            <p><span>Age</span>19 Y</p>
+                                            <p><span>Employees</span>35-50</p>
+                                            <p><span>Revenue</span>$5-10M</p>
+                                            <p><span>Locations</span>03</p>
+                                            <p><span>Contacts</span>06</p>
+                                            <p><span>Avg. Spend/Mo</span>Unknown</p>
+                                        </div>
+                                        <div class="last-section">
+                                            <div class="details-category">
+                                                <p>Category(s):</p>
+                                                <ul>
+                                                    <li>Auto Auction</li>
+                                                    <li>Auto Body Parts Supplier</li>
+                                                </ul>
+                                            </div>
+                                            <div class="details-prospects">
+                                                <p>Prospects For:</p>
+                                                <ul>
+                                                    <li>Website</li>
+                                                    <li>Social</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-right-wrapper">
+                                    <button class="btn">ADD</button>
+                                    <div class="image-container">
+                                        <img src="/resources/chart-2.png" alt="chart data">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="details-footer">
+                                <div class="details-footer-info">
+                                    <p>Source: <i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                    <p>Updated On: <span>Dec 2017</span></p>
+                                </div>
+
+                                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-wrapper">
+                                <div class="card-left-wrapper">
+                                    <div class="check-box-item">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </div>
+                                    <div class="card-details-wrapper">
+                                        <div class="details">
+                                            <h3>Nationwide Automobile</h3>
+                                            <div class="details-section">
+                                                <address>
+                                                    <p><i class="fa fa-map-marker" aria-hidden="true"></i>26 Prince
+                                                        Street, New York, NY 10012</p>
+                                                    <p><i class="fa fa-link" aria-hidden="true"></i><a
+                                                            class="details-link"
+                                                            href="http://www.nationwide.com">www.nationwide.com</a></p>
+                                                    <p><i class="fa fa-phone" aria-hidden="true"></i><a
+                                                            href="tel:+718 523-9090">(718) 523-90901</a></p>
+                                                </address>
+                                            </div>
+                                        </div>
+                                        <div class="details user-info">
+                                            <p><span>Age</span>19 Y</p>
+                                            <p><span>Employees</span>35-50</p>
+                                            <p><span>Revenue</span>$5-10M</p>
+                                            <p><span>Locations</span>03</p>
+                                            <p><span>Contacts</span>06</p>
+                                            <p><span>Avg. Spend/Mo</span>Unknown</p>
+                                        </div>
+                                        <div class="last-section">
+                                            <div class="details-category">
+                                                <p>Category(s):</p>
+                                                <ul>
+                                                    <li>Auto Auction</li>
+                                                    <li>Auto Body Parts Supplier</li>
+                                                </ul>
+                                            </div>
+                                            <div class="details-prospects">
+                                                <p>Prospects For:</p>
+                                                <ul>
+                                                    <li>Website</li>
+                                                    <li>Social</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="card-right-wrapper">
+                                    <button class="btn">ADD</button>
+                                    <div class="image-container">
+                                        <img src="/resources/chart-3.png" alt="chart data">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="details-footer">
+                                <div class="details-footer-info">
+                                    <p>Source: <i class="fa fa-comment-o" aria-hidden="true"></i></p>
+                                    <p>Updated On: <span>Dec 2017</span></p>
+                                </div>
+
+                                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <p class="info">We can try and fetch more results via an external source. Ok! <a href="#">Get me more</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
